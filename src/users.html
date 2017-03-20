@@ -1,0 +1,30 @@
+<div class="x_panel">
+    <div class="x_title">
+        <h2>Student list</h2>
+        <div class="clearfix"></div>
+    </div>
+    <div class="x_content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of users">
+                    <td>{{user.id}}</td>
+                    <td>{{user.firstName}}</td>
+                    <td>{{user.lastName}}</td>
+                    <td>
+                        <a (click)="onSelected(user)"><i class="fa fa-eye"></i></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <form-preview *ngIf="selectedUser" [(firstName)]="selectedUser.firstName">
+        </form-preview>
+    </div>
+</div>
