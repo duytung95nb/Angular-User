@@ -73,6 +73,11 @@
                     <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
                         <div class="menu_section">
                             <h3>General</h3>
+                            <ul class="nav side-menu" style="">
+                                <li class="active"><a routerLink="/users"><i class="fa fa-user"></i>Users</a>
+                                </li>
+
+                            </ul>
                         </div>
                     </div>
                     <!-- /sidebar menu -->
@@ -196,9 +201,9 @@
             <!-- page content -->
             <div class="right_col" role="main">
                 <default-page>default page will be here.</default-page>
-                    <script>
-                        System.import("src/main").catch(function (error) { console.log(error); });
-                    </script>
+                <script>
+                    System.import("src/main").catch(function (error) { console.log(error); });
+                </script>
             </div>
             <!-- /page content -->
 

@@ -14,14 +14,21 @@ const userRoutes_1 = require("./userRoutes");
 const users_1 = require("./users");
 const formPreview_1 = require("./formPreview");
 const userService_1 = require("./userService");
+const page_1 = require("./page");
+const formButtonPrimary_1 = require("./formButtonPrimary");
+const formInput_1 = require("./formInput");
+const formButton_1 = require("./formButton");
+const formHorizontal_1 = require("./formHorizontal");
 let SecurityModule = class SecurityModule {
 };
 SecurityModule = __decorate([
     core_1.NgModule({
         imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, userRoutes_1.UserRoutes],
-        declarations: [defaultPage_1.DefaultPage, users_1.Users, formPreview_1.FormPreview],
+        declarations: [defaultPage_1.DefaultPage, users_1.Users, formPreview_1.FormPreview, page_1.Page, formHorizontal_1.FormHorizontal,
+            formInput_1.FormInput, formButton_1.FormButton, formButtonPrimary_1.FormButtonPrimary],
         bootstrap: [defaultPage_1.DefaultPage],
-        providers: [userService_1.UserService]
+        providers: [userService_1.UserService],
+        schemas: [core_1.CUSTOM_ELEMENTS_SCHEMA]
     })
 ], SecurityModule);
 exports.SecurityModule = SecurityModule;

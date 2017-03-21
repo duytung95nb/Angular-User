@@ -8,7 +8,7 @@ export class FormPreview{
     @Input() firstName:string;
     @Output() firstNameChange:EventEmitter<string> = new EventEmitter();
 
-    public onValueChange(){
+    public onFirstNameChanged(){
         this.firstNameChange.emit(this.firstName);
     }
 }

@@ -1,9 +1,8 @@
-<div class="x_panel">
-    <div class="x_title">
-        <h2>Student list</h2>
-        <div class="clearfix"></div>
-    </div>
-    <div class="x_content">
+<page>
+    <page-header>
+        Student list
+    </page-header>
+    <page-content>
         <table class="table">
             <thead>
                 <tr>
@@ -26,5 +25,5 @@
         </table>
         <form-preview *ngIf="selectedUser" [(firstName)]="selectedUser.firstName">
         </form-preview>
-    </div>
-</div>
+    </page-content>
+</page>

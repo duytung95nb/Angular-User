@@ -10,27 +10,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const core_1 = require("@angular/core");
-let FormPreview = class FormPreview {
+let FormButtonPrimary = class FormButtonPrimary {
     constructor() {
-        this.firstNameChange = new core_1.EventEmitter();
-    }
-    onFirstNameChanged() {
-        this.firstNameChange.emit(this.firstName);
+        this.cls = "btn-primary";
     }
 };
 __decorate([
     core_1.Input(),
     __metadata("design:type", String)
-], FormPreview.prototype, "firstName", void 0);
-__decorate([
-    core_1.Output(),
-    __metadata("design:type", core_1.EventEmitter)
-], FormPreview.prototype, "firstNameChange", void 0);
-FormPreview = __decorate([
+], FormButtonPrimary.prototype, "label", void 0);
+FormButtonPrimary = __decorate([
     core_1.Component({
-        selector: "form-preview",
-        templateUrl: "src/formPreview.html"
+        selector: "form-button-primary",
+        templateUrl: "src/formButtonPrimary.html"
     })
-], FormPreview);
-exports.FormPreview = FormPreview;
-//# sourceMappingURL=formPreview.js.map
+], FormButtonPrimary);
+exports.FormButtonPrimary = FormButtonPrimary;
+//# sourceMappingURL=formButtonPrimary.js.map
